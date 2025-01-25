@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="Svg/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container flex">
+        <!-- left part -->
+        <div class="left">
+
+            <!--Home  -->
+            <div class="home">
+
+                <div class="logoarea">
+                    <div class="logo"><img class="logo-svg" src="Svg/logo.svg" alt="logo"></div>
+                    <div class="arrow"><i class="fa-solid fa-square-xmark"></i></div>
+                </div>
+                <ul>
+                    <li class="homecont  "><img class="home-svg" src="Svg/home.svg" alt="Home" srcset="">Home</li>
+                    <li class="searchcont"><img class="search-svg" src="Svg/search.svg" alt="Search" srcset="">Search
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Library -->
+            <div class="left-body">
+                <div class="library rounded">
+                    <div class="heading">
+                        <img class="library-svg" src="Svg/library.svg" alt="">
+                        <h2>Your Library</h2>
+                    </div>
+
+                    <!-- SongList Of Library -->
+                    <div class="songlist">
+                        <ul>
+
+                        </ul>
+                    </div>
+
+                    <!-- left footer -->
+                    <div class="footer">
+                        <div>
+                            <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/jp/legal/privacy-policy/s3"><span>About Ads</span></a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Right part -->
+        <div class="right">
+
+            <!-- Header -->
+            <div class="header">
+
+                <div class="nav">
+                    <div class="flex gap-20">
+                        <div class="bar"><i class="fa-solid fa-bars"></i></div>
+
+                        <div class="theme"><img class="toggle" src="images/sun.png" alt="" width="25px"></div>
+
+                        <ul class="chevron">
+                            <li><i class="fa-solid fa-chevron-left"></i></li>
+                            <li><i class="fa-solid fa-chevron-right"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="Signupbtn">Sign Up</button>
+                    <button class="loginbtn">Log In</button>
+                </div>
+
+
+                <div class="loginmenu">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                </div>
+
+
+            </div>
+            <div class="list">
+                <li>Log In</li>
+                <li>Sign up</li>
+                <li>Premium</li>
+            </div>
+
+            <!-- Spotify playlists -->
+            <div class="playlist">
+                <h2 class="p-1">Spotify Playlists</h2>
+
+                <div class="cardContainer m-1 ">
+
+                    <div data-folder="sadsongs" class="card">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img2.jpg" alt="">
+                        <h3>Sad Songs</h3>
+                        <p>A Playlist to Mend Your Soul and Move On 💔🎶</p>
+                    </div>
+
+                    <div data-folder="Happyhits" class="card ">
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+
+                        <img src="images/img1.jpg" alt="">
+                        <h3>Happy Hits !</h3>
+                        <p>Hits to boost your mood and fill you with...</p>
+                    </div>
+
+                    <div data-folder="Englishsongs" class="card">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img3.jpg" alt="">
+                        <h3>English Songs</h3>
+                        <p>A Playlist of Timeless English Hits to Enchant Your Ears✨</p>
+                    </div>
+
+                    <div data-folder="Gymhits" class="card">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img4.jpg" alt="">
+                        <h3>Gym Hits !</h3>
+                        <p>Get your gym mode on!</p>
+                    </div>
+
+                    <div data-folder="Godsongs" class="card">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img5.jpeg" alt="">
+                        <h3>God Songs</h3>
+                        <p>Let the rhythm of devotion and the melody of faith guide your heart</p>
+                    </div>
+
+                    <div data-folder="Marathisongs" class="card ">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img6.jpg" alt="">
+                        <h3>Marathi Hits!</h3>
+                        <p>Listen best marathi songs: A Timeless Collection</p>
+                    </div>
+
+                    <div data-folder="Arijitsongs" class="card ">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img7.jpg" alt="">
+                        <h3>Arijit Special !</h3>
+                        <p>Bollywood crooner's essential songs</p>
+                    </div>
+
+                    <div data-folder="Attitudesongs" class="card ">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img8.jpg" alt="">
+                        <h3>Attitude Songs!</h3>
+                        <p>An Electrifying Playlist to Channel Your Attitude🔥</p>
+                    </div>
+
+                    <div data-folder="yoyosongs" class="card ">
+
+                        <div class="playc"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/img9.jpeg" alt="">
+                        <h3>Yo Yo Special</h3>
+                        <p>Upbeat dance pop to keep your heart...</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Play-bar -->
+            <div class="playbar">
+
+                <div class="songinfo">Song Name</div>
+
+                <div class="songbuttons">
+                    <img class="previous" src="Svg/previous.svg" alt="">
+                    <img class="play" src="Svg/play.svg" alt="">
+                    <img class="next" src="Svg/next.svg" alt="">
+                </div>
+
+                <div class="timecont">
+                    <div class="songtime">00:00/00:00</div>
+                </div>
+
+                <!-- seekbar for song time -->
+                <div class="seekbarCont">
+                    <div class="mutecont">
+                        <img class="mute" src="Svg/speker.svg" alt="" width="30px">
+                    </div>
+
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+
+                    <div class="starcont">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+
+</html>

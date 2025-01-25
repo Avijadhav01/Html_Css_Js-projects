@@ -1,0 +1,78 @@
+/* Styling the scrollbar */
+::-webkit-scrollbar {
+    width: 4px;  /* Thin scrollbar width */
+    height: 4px; /* Thin horizontal scrollbar */
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+/* Optional: Scrollbar corner for when both vertical and horizontal bars are present */
+::-webkit-scrollbar-corner {
+    background-color: #2c2c2c;
+}
+
+
+
+.border{
+    border: 2px solid red;
+    margin: 5px;
+}
+
+.flex{
+    display: flex;
+}
+.gap-20{
+    gap: 20px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: WHITE;
+}
+
+.bg-gray{
+    background-color: #1f1f1f;
+    color: WHITE;
+}
+
+.bg-head{
+    background-color: #2b2e2b;
+}
+
+
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 8px;
+}
+
+.p-1{
+    padding: 12px;
+}
+
+
+
+
+  /* volume range  */
+  .range {
+    width: 15px;
+    height: 100px;
+
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+  }
