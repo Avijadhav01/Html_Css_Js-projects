@@ -1,0 +1,115 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: green;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.welcome{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    background: url("background-game.gif");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gameover{
+    height: 50px;
+    width: 180px;
+    font-size: 30px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    font-family: sans-serif;    
+
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.scorecont{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+    width: 200px;
+    margin: auto;
+    border: 1px solid black;
+    line-height: 30px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.man {
+    height: 20vh;
+    width: 5vw;
+    background: url("man.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 5vh;
+    left: 10vw;
+}
+
+#monster1 {
+    height: 20vh;
+    width: 10vw;
+    background: url("monster.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 5vh;
+}
+
+#monster1 {
+    right: 50vw;
+}
+
+.monster-ani1{
+    animation: mon_animate1 5s linear 0.3s infinite;
+}
+
+.Man-jump {
+    animation: jump 0.6s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 5vh;
+    }
+    50% {
+        bottom: 45vh;
+
+    }
+    100% {
+        bottom: 5vh;
+    }
+}
+
+@keyframes mon_animate1 {
+    0%{
+        right: -10vw;
+    }
+    100%{
+        right: 110vw;
+    }
+}
