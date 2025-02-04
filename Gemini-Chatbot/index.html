@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini ChatBot</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Linking fontawson cdn for icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
+</head>
+
+<body>
+  <!-- Header  -->
+  <header class="header">
+    <h2 class="title">Hello, there</h2>
+    <h4 class="subtitle">How can I help you today ?</h4>
+
+    <!-- suggestion-list -->
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">
+          Help me plan a game night with my 5 best friends under $100.
+        </h4>
+        <span class="icon"><i class="fa-solid fa-pencil"></i></span>
+      </li>
+
+      <li class="suggestion">
+        <h4 class="text">
+          what are the best tips to improve my public speaking skills?
+        </h4>
+        <span class="icon"><i class="fa-regular fa-lightbulb"></i></span>
+      </li>
+
+      <li class="suggestion">
+        <h4 class="text">
+          can u help me to find the latest news on web devlopment?
+        </h4>
+        <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </li>
+
+      <li class="suggestion">
+        <h4 class="text">
+          write javaScript code to sum all the elements in array.
+        </h4>
+        <span class="icon"><i class="fa-solid fa-code"></i></span>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Chat Section -->
+  <div class="chat-list"></div>
+
+  <!-- Typing Area -->
+  <div class="typing-area">
+
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Enter a prompt here" class="typing-input" required />
+        <button class="icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="action-buttons">
+        <div id="toggleThemeButton" class="icon"><img src="images/sun.png" alt=""></div>
+        <div id="Chat-delete-btn" class="icon"><i class="fa-solid fa-trash"></i></div>
+      </div>
+    </form>
+
+    <p class="desclaimer-text">
+      Gemini may display inaccurate info, including about people, so double-click its responce.
+    </p>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
